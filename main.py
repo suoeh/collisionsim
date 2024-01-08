@@ -132,10 +132,10 @@ def simulate(mass):
     def update():
         text = font.render("Total collisions: " + str(counter), True, colourH)
         text2 = font.render("Right block:", True, colourH)
-        text22 = font.render("Velocity: " + str(round(block2.velocity, 5)), True, colourH)
+        text22 = font.render("Velocity: " + str(round(2500 * block2.velocity, 5)), True, colourH)
         text222 = font.render("Mass: " + str(round(block2.mass)), True, colourH)
         text3 = font.render("Left block:", True, colourH)
-        text33 = font.render("Velocity: " + str(round(block1.velocity, 5)), True, colourH)
+        text33 = font.render("Velocity: " + str(round(2500 * block1.velocity, 5)), True, colourH)
         text333 = font.render("Mass: " + str(round(block1.mass)), True, colourH)
         screen.fill(colourL)
         pygame.draw.rect(screen, colourM, (0, height // 2 - 1, width, height // 2 + 1))
